@@ -4,6 +4,10 @@
 # For more details, see
 #   https://d.android.com/r/tools/r8/keep-rules
 
+# Gson memetakan JSON lewat nama field, jadi R8 tidak boleh mengganti nama
+# atau membuang field model pada build release.
+-keep class dev.atalariq.gobooks.data.** { <fields>; }
+
 # If your project uses WebView with JS, uncomment the following
 # and specify the fully qualified class name to the JavaScript interface
 # class:

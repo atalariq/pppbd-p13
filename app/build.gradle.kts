@@ -5,9 +5,8 @@ plugins {
 
 android {
     namespace = "dev.atalariq.gobooks"
-    compileSdk {
-        version = release(37)
-    }
+    compileSdk = 37
+    compileSdkMinor = 1
 
     defaultConfig {
         applicationId = "dev.atalariq.gobooks"
